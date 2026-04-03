@@ -1,0 +1,157 @@
+export interface Product {
+  id: string;
+  name: string;
+  price: number;
+  image: string;
+  category: string;
+  rating: number;
+  reviews: number;
+  description: string;
+  ingredients?: string[];
+  flavors?: string[];
+}
+
+export const products: Product[] = [
+  {
+    id: "1",
+    name: "Triple Chocolate Fudge Cake",
+    price: 45.99,
+    image: "https://images.unsplash.com/photo-1639488296096-1a3e6e7cd5b2?w=1080",
+    category: "Cakes",
+    rating: 4.9,
+    reviews: 234,
+    description: "Rich, decadent triple chocolate cake with layers of fudge frosting. Perfect for chocolate lovers!",
+    flavors: ["Dark Chocolate", "Milk Chocolate", "White Chocolate"],
+  },
+  {
+    id: "2",
+    name: "Strawberry Dream Cheesecake",
+    price: 38.99,
+    image: "https://images.unsplash.com/photo-1676300186833-057912886971?w=1080",
+    category: "Cheesecakes",
+    rating: 4.8,
+    reviews: 189,
+    description: "Creamy cheesecake topped with fresh strawberries and a graham cracker crust.",
+    ingredients: ["Cream Cheese", "Fresh Strawberries", "Graham Crackers", "Sugar"],
+  },
+  {
+    id: "3",
+    name: "Vanilla Bean Cupcakes",
+    price: 24.99,
+    image: "https://images.unsplash.com/photo-1646318753516-078a7ddcc770?w=1080",
+    category: "Cupcakes",
+    rating: 4.7,
+    reviews: 156,
+    description: "Light and fluffy vanilla cupcakes with buttercream frosting. Box of 6.",
+    flavors: ["Classic Vanilla", "French Vanilla", "Madagascar Vanilla"],
+  },
+  {
+    id: "4",
+    name: "Classic Chocolate Chip Cookies",
+    price: 18.99,
+    image: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=1080",
+    category: "Cookies",
+    rating: 4.9,
+    reviews: 312,
+    description: "Freshly baked cookies with premium chocolate chips. Dozen pack.",
+    ingredients: ["Flour", "Butter", "Chocolate Chips", "Sugar", "Eggs"],
+  },
+  {
+    id: "5",
+    name: "Fudgy Dark Chocolate Brownies",
+    price: 21.99,
+    image: "https://images.unsplash.com/photo-1664339030103-42227126b6ba?w=1080",
+    category: "Brownies",
+    rating: 4.8,
+    reviews: 201,
+    description: "Ultra fudgy brownies made with premium dark chocolate. Box of 8.",
+    flavors: ["Classic Fudge", "Walnut", "Salted Caramel"],
+  },
+  {
+    id: "6",
+    name: "Mixed Berry Parfait",
+    price: 12.99,
+    image: "https://images.unsplash.com/photo-1707588435406-74ef5f056e4d?w=1080",
+    category: "Parfaits",
+    rating: 4.6,
+    reviews: 98,
+    description: "Layered yogurt parfait with fresh berries, granola, and honey.",
+    ingredients: ["Greek Yogurt", "Mixed Berries", "Granola", "Honey"],
+  },
+  {
+    id: "7",
+    name: "Red Velvet Dream Cake",
+    price: 42.99,
+    image: "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?w=1080",
+    category: "Cakes",
+    rating: 4.9,
+    reviews: 267,
+    description: "Classic red velvet cake with cream cheese frosting. Elegant and delicious.",
+    flavors: ["Original Red Velvet", "Pink Velvet", "Blue Velvet"],
+  },
+  {
+    id: "8",
+    name: "French Macarons Assortment",
+    price: 28.99,
+    image: "https://images.unsplash.com/photo-1772411534568-1fe0c61b21a3?w=1080",
+    category: "Cookies",
+    rating: 4.8,
+    reviews: 178,
+    description: "Delicate French macarons in assorted flavors. Box of 12.",
+    flavors: ["Raspberry", "Pistachio", "Vanilla", "Chocolate", "Lemon", "Lavender"],
+  },
+  {
+    id: "9",
+    name: "Classic Tiramisu",
+    price: 35.99,
+    image: "https://images.unsplash.com/photo-1714385905983-6f8e06fffae1?w=1080",
+    category: "Cakes",
+    rating: 4.7,
+    reviews: 145,
+    description: "Traditional Italian tiramisu with espresso-soaked ladyfingers and mascarpone.",
+    ingredients: ["Mascarpone", "Espresso", "Ladyfingers", "Cocoa Powder"],
+  },
+  {
+    id: "10",
+    name: "Lemon Meringue Tart",
+    price: 32.99,
+    image: "https://images.unsplash.com/photo-1648412009969-de91a17f4340?w=1080",
+    category: "Cakes",
+    rating: 4.6,
+    reviews: 122,
+    description: "Tangy lemon curd in a buttery tart shell topped with toasted meringue.",
+    flavors: ["Classic Lemon", "Meyer Lemon", "Lemon-Lime"],
+  },
+  {
+    id: "11",
+    name: "Blueberry Streusel Muffins",
+    price: 19.99,
+    image: "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=1080",
+    category: "Cupcakes",
+    rating: 4.7,
+    reviews: 167,
+    description: "Moist blueberry muffins with a crunchy streusel topping. Box of 6.",
+    ingredients: ["Fresh Blueberries", "Flour", "Butter", "Sugar", "Streusel"],
+  },
+  {
+    id: "12",
+    name: "Cinnamon Roll Deluxe",
+    price: 26.99,
+    image: "https://images.unsplash.com/photo-1604349347116-c9eeaf23700f?w=1080",
+    category: "Cupcakes",
+    rating: 4.9,
+    reviews: 289,
+    description: "Warm cinnamon rolls with cream cheese icing. Box of 6.",
+    flavors: ["Classic Cinnamon", "Pecan", "Caramel"],
+  },
+];
+
+export const categories = [
+  "All",
+  "Cakes",
+  "Cheesecakes",
+  "Cupcakes",
+  "Cookies",
+  "Brownies",
+  "Parfaits",
+];
